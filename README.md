@@ -17,13 +17,6 @@ Como template engineer foi usado o plates, com ele consigo manipular variáveis 
 Foi feito um mini framework para lhe da com toda parte de SQL, criado function para desacoplar a aplicação assim com helpers para ajudar
 no desenvolvimento desse desafio, o código e legível e usa boas práticas
   
-## Used By
-
-This project is used by the following companies:
-
-- DevAction
-- CodeTrap
-
   
 ## Tech Stack
 

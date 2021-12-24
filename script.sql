@@ -1,7 +1,6 @@
 create or replace table mail_queue
 (
     id              int(11) unsigned auto_increment
-        constraint `PRIMARY`
         primary key,
     subject         varchar(255) default ''                  not null,
     body            text                                     not null,
@@ -17,15 +16,13 @@ create or replace table mail_queue
 create or replace table tipos
 (
     id   int unsigned auto_increment
-        constraint `PRIMARY`
         primary key,
-    nome enum ('Desenvolvimento', 'Atendimento', 'Manutenção', 'Manutenção urgente') null
+    nome enum ('Desenvolvimento', 'Atendimento', 'Manutenção', 'Manutenção urgente') not null
 );
 
 create or replace table users
 (
     id         int(11) unsigned auto_increment
-        constraint `PRIMARY`
         primary key,
     first_name varchar(255) default ''                  not null,
     last_name  varchar(255) default ''                  not null,
@@ -46,20 +43,18 @@ create or replace table users
 create or replace table atividades
 (
     id         int unsigned auto_increment
-        constraint `PRIMARY`
         primary key,
-    titulo     varchar(100)                     not null,
-    descricao  text                             not null,
-    status     enum ('open', 'closed')          null,
-    tipo_id    int unsigned                     not null,
-    user_id    int unsigned                     not null,
-    created_at date default current_timestamp() null,
-    update_at  date default current_timestamp() null,
-    due_at     date                             null,
+    titulo     varchar(100)                                        not null,
+    descricao  text                                                not null,
+    status     enum ('open', 'closed') default 'open'              null,
+    tipo_id    int unsigned                                        not null,
+    user_id    int unsigned                                        not null,
+    created_at date                    default current_timestamp() null,
+    update_at  date                    default current_timestamp() null,
+    due_at     date                                                null,
     constraint FK_ATIVIDADES_TIPOS
         foreign key (tipo_id) references tipos (id),
     constraint FK_ATIVIDADES_USER
         foreign key (user_id) references users (id)
 );
-
 

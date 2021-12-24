@@ -1,6 +1,4 @@
 source/Boot/Config.php
-.htaccess
-
 
 /vendor/
 .idea

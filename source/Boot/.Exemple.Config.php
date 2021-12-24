@@ -2,7 +2,7 @@
 /**
  * DATABASE
  */
-const CONF_DB_HOST = "";
+const CONF_DB_HOST = "localhost";
 const CONF_DB_USER = "";
 const CONF_DB_PASS = "";
 const CONF_DB_NAME = "";
@@ -10,33 +10,20 @@ const CONF_DB_NAME = "";
 /**
  * PROJECT URLs
  */
-const CONF_URL_BASE = "https://www.moneycoffee.com.br";
-const CONF_URL_TEST = "http://localhost/fsphp";
+const CONF_URL_BASE = "https://www.vmaquinas.com.br";
+const CONF_URL_TEST = "http://localhost/vmaquinas";
 const CONF_URL_ADMIN = "/admin";
 
 /**
  * SITE
  */
-const CONF_SITE_NAME = "MoneyCoffee";
+const CONF_SITE_NAME = "Controle de Chamados";
 const CONF_SITE_TITLE = "Gerencie suas contas com o melhor café";
-const CONF_SITE_DESC = "O MoneyCoffee é um gerenciador de contas simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas contas.";
+const CONF_SITE_DESC = "O Controle de Chamados é um gerenciador de chamados simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas tickets.";
 const CONF_SITE_LANG = "pt_BR";
-const CONF_SITE_DOMAIN = "moneycoffee.com.br";
+const CONF_SITE_DOMAIN = "vmaquinas.com.br";
 
-/**
- * SOCIAL
- */
-const CONF_SOCIAL_TWITTER_CREATOR = "@DevOnCycle";
-const CONF_SOCIAL_TWITTER_PUBLISHER = "@DevOnCycle";
-const CONF_SOCIAL_FACEBOOK_APP = "626590460695980";
-const CONF_SOCIAL_FACEBOOK_PAGE = "devaction";
-const CONF_SOCIAL_FACEBOOK_AUTHOR = "devaction";
-const CONF_SOCIAL_GOOGLE_PAGE = "107305124528362639842";
-const CONF_SOCIAL_GOOGLE_AUTHOR = "103958419096641225872";
-const CONF_SOCIAL_INSTAGRAM_PAGE = "alexnogueirasilva";
-const CONF_SOCIAL_YOUTUBE_PAGE = "devaction";
-
-/**
+/*
  * DATES
  */
 const CONF_DATE_BR = "d/m/Y H:i:s";
@@ -80,16 +67,16 @@ const CONF_MAIL_HOST = "smtp.sendgrid.net";
 const CONF_MAIL_PORT = "587";
 const CONF_MAIL_USER = "apikey";
 const CONF_MAIL_PASS = "";
-const CONF_MAIL_SENDER = ["name" => "Alex N. Silva", "address" => "alex@devaction.com.br"];
-const CONF_MAIL_SUPPORT = "alex@devaction.com.br";
+const CONF_MAIL_SENDER = ["name" => "", "address" => ""];
+const CONF_MAIL_SUPPORT = "";
 const CONF_MAIL_OPTION_LANG = "br";
 const CONF_MAIL_OPTION_HTML = true;
 const CONF_MAIL_OPTION_AUTH = true;
 const CONF_MAIL_OPTION_SECURE = "";
 const CONF_MAIL_OPTION_CHARSET = "utf-8";
-const CONF_SITE_ADDR_STREET = "Rua: Trigêmeos";
-const CONF_SITE_ADDR_NUMBER = "0";
-const CONF_SITE_ADDR_COMPLEMENT = "Rua do México";
-const CONF_SITE_ADDR_CITY = "Feira de Santana";
+const CONF_SITE_ADDR_STREET = "";
+const CONF_SITE_ADDR_NUMBER = "";
+const CONF_SITE_ADDR_COMPLEMENT = "";
+const CONF_SITE_ADDR_CITY = "";
 const CONF_SITE_ADDR_STATE = "Bahia";
-const CONF_SITE_ADDR_ZIPCODE = "44090-778";
+const CONF_SITE_ADDR_ZIPCODE = "";

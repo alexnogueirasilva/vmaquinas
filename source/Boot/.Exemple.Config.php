@@ -18,7 +18,7 @@ const CONF_URL_ADMIN = "/admin";
  * SITE
  */
 const CONF_SITE_NAME = "Controle de Chamados";
-const CONF_SITE_TITLE = "Gerencie suas contas com o melhor café";
+const CONF_SITE_TITLE = "Gerencie seus chamados";
 const CONF_SITE_DESC = "O Controle de Chamados é um gerenciador de chamados simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas tickets.";
 const CONF_SITE_LANG = "pt_BR";
 const CONF_SITE_DOMAIN = "vmaquinas.com.br";
